@@ -1,0 +1,12 @@
+bitbucket:223.vd12f2bca5430
+gitlab-plugin:1.6.0
+generic-webhook-trigger:1.85.2
+ec2:2.0.4
+amazon-ecr:1.107.ve50d37906739
+amazon-ecs:1.46
+configuration-as-code:1569.vb_72405b_80249
+docker-plugin:1.2.10
+docker-workflow:563.vd5d2e5c4007f
+docker-build-publish:1.4.0
+kubernetes:3734.v562b_b_a_627ea_c
+nodejs:1.5.1

@@ -1,0 +1,17 @@
+cloudbees-folder:6.800.v71307ca_b_986b
+antisamy-markup-formatter:155.v795fb_8702324
+build-timeout:1.25
+ws-cleanup:0.43
+ant:481.v7b_09e538fcca
+gradle:2.1.1
+workflow-aggregator:590.v6a_d052e5a_a_b_5
+github-branch-source:1696.v3a_7603564d04
+pipeline-github-lib:38.v445716ea_edda_
+pipeline-stage-view:2.28
+git:4.14.2
+ssh-slaves:2.854.v7fd446b_337c9
+matrix-auth:3.1.5
+pam-auth:1.10
+ldap:2.12
+email-ext:2.92
+mailer:438.v02c7f0a_12fa_4

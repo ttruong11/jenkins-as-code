@@ -1,0 +1,43 @@
+jenkins:
+  systemMessage: "Jenkins configured automatically by Jenkins Configuration as Code plugin\n\n"
+  numExecutors: 5
+  scmCheckoutRetryCount: 2
+  mode: NORMAL  
+  nodes:
+    - permanent:
+        name: "jenkins-sshagent-1"
+        remoteFS: "/home/jenkins-sshagent1"
+        retentionStrategy: "always"
+        launcher:
+          ssh:
+            credentialsId: "jenkins_ssh"
+            host: "localhost:8080"
+            port: 22
+            sshHostKeyVerificationStrategy: "knownHostsFileKeyVerificationStrategy"
+    - permanent:
+        name: "static-agent1"
+        remoteFS: "/home/jenkins-agent1"
+        launcher:
+          inbound:
+            workDirSettings:
+              disabled: true
+              failIfWorkDirIsMissing: false
+              internalDir: "remoting"
+              workDirPath: "/tmp"
+    - permanent:
+        name: "static-agent2"
+        remoteFS: "/home/jenkins-agent2"
+        launcher:
+          inbound:
+            workDirSettings:
+              disabled: true
+              failIfWorkDirIsMissing: false
+              internalDir: "remoting"
+              workDirPath: "/tmp"
+
+#Uncomment if you are installing dark-theme to set the configuration as code
+
+#unclassified:
+  #themeManager:
+    #disableUserThemes: true
+      #theme: "dark" # use 'dark' for forcing the dark theme regardless of OS settings             

@@ -1,0 +1,11 @@
+#/bin/sh
+
+set -ex
+
+## Add your jenkins intance hostname or use localhost url for local
+## This setups the jenkins-cli.jar for you to run jenkins-cli commands
+curl 'https://jenkins-hostname/jnlpJars/jenkins-cli.jar' > jenkins-cli.jar    
+
+## executes a Jenkinscli command passing in a groovy file
+## the groovy file has code to parse through our plugin list to output a file for your use.
+java -jar jenkins-cli.jar -s https://jenkins.hostname -auth "admin:password" groovy = < plugins.groovy > plugins.txt

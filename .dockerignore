@@ -1,0 +1,6 @@
+## local jenkins directory
+
+jenkins_home/
+
+## custom plugins
+.docker/jenkins_plugins/example.JPI

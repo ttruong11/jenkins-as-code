@@ -1,0 +1,4 @@
+blueocean:1.25.8
+simple-theme-plugin:136.v23a_15f86c53d
+material-theme:0.5.2-rc100.6121925fe229
+dark-theme:262.v0202a_4c8fb_6a
